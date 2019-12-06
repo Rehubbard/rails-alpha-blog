@@ -1,0 +1,58 @@
+$navbar-border-radius: 0;
+$navbar-default-link-color: #ffffff;
+$navbar-default-link-active-color: #9590a8;
+$navbar-default-link-hover-color: #9590a8;
+
+.navbar-default,
+.navbar-collapse {
+  background: #8e2de2; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #4a00e0,
+    #8e2de2
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #4a00e0,
+    #8e2de2
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#logo {
+  font-size: 1.7em;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  float: left;
+  letter-spacing: -1px;
+}
+
+.center {
+  text-align: center;
+}
+
+.jumbotron {
+  height: 400px;
+  background-image: url("https://i.imgur.com/5Sf2JZ7.png");
+  background-size: cover;
+}
+
+.jumbotron h1 {
+  color: #fff !important;
+  margin-bottom: 50px;
+}
+
+.btn-primary {
+  background-color: #8e2de2 !important;
+  border-color: #8e2de2 !important;
+}
+
+.footer {
+  margin-top: 45px;
+  padding: 5px;
+  border-top: 1px solid #eaeaea;
+  color: #777;
+}
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
