@@ -4,7 +4,16 @@
         <div class='well well-lg'>
           <h3><%= link_to article.title, article_path(article) %></h3>
           <div><%= article.description%></div>
+          <hr class='divider'/>
           <small>Created by: <%= article.user.username if article.user  %>, <%= time_ago_in_words(article.created_at) %> ago</small>
+          <% if article.categories.any? %>
+            <p>Categories: </p>
+            <div class='row'>
+              <div class="col-xs-10">
+                <%= render article.categories %>
+              </div>
+            </div>
+          <% end %>
           <% if logged_in? && (current_user == article.user || current_user.admin?) %>
             <div class='article-actions'>
               <%= link_to "Edit", edit_article_path(article) %>
